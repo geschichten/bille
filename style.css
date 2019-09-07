@@ -1,0 +1,170 @@
+
+body.dragscroll {
+    overflow:scroll;
+}
+
+/* iframe {
+    border: 0;
+} */
+
+ #alles {
+    width: 250%;
+    pointer-events: all;
+} 
+
+.st0 { /* hides all path & polygon fills by defaul */
+    /* fill:none; */
+    fill-opacity:0;
+}
+
+button {
+    font-size: 2vw;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-shadow: 0px 0px 20px white, 0px 0px 20px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred;
+    background: black;
+    
+
+}
+.button {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+
+}
+
+
+g#background {
+    cursor: -moz-grab;
+    cursor: -o-grab;
+    cursor: -webkit-grab;
+    cursor: grab; 
+}
+
+g#background:active {
+    cursor: url(images/grabbing.cur);
+    cursor: -webkit-grabbing;
+    cursor:    -moz-grabbing;
+    cursor:         grabbing;
+} 
+
+g#spuren rect:hover {
+    stroke:palevioletred;
+    stroke-width:5px;
+    fill-opacity: 1;
+    cursor: pointer;
+}
+
+ g#topf-gruppe path:hover {  
+    stroke:palevioletred;
+    stroke-width:2px;
+    stroke-dasharray: 20;
+    animation: dash 10s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+    
+    
+g#verbindungen:hover {
+    cursor: url(resources/ear.png), pointer;
+
+}
+
+
+
+/* rect#zueblin:hover { 
+    fill:url(#zueblin-overlay);
+} */
+
+/*Bilder nicht normal anzeigen*/
+
+div.textpic {
+    display: none;
+
+}
+
+
+
+img.thumb {
+    display: contents
+}
+
+div.textpic img {
+    position: relative;
+    border: 15px solid palevioletred;
+    margin-right: 50px;
+    width: 70%;
+    height: 70%;
+
+    
+
+}
+
+div.textpic video {
+    
+    
+    box-shadow: 0px 0px 15px 20px palevioletred;
+    position: fixed;
+    float: none;
+    bottom: 15%;
+    left: 25%;
+    max-height: 75%;
+    width: auto;
+    
+
+
+    
+
+}
+
+div.show {
+    display: flex;
+    position: fixed;
+    float: none;
+    bottom: 15%;
+    left: 25%;
+    max-width: 45%;
+    max-height: 75%;
+    
+}
+
+div.textpic p {
+
+    width: 30%;
+    font-size: 2vw;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-shadow: 0px 0px 20px white, 0px 0px 20px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred;
+
+
+
+}
+
+div.textpic p.longtext {
+
+    font-size: 1.5vw;
+
+}
+div.textpic p.quelle {
+
+    font-size: 0.8vw;
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    
+
+}
+

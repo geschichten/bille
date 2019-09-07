@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <meta charset="utf-8">
+    <title> (Ge)schichten – den Akteur*innen auf der Spur </title>
+    <body class="dragscroll">  
+        
+       <!-- <iframe id="map_svg"
+        title="Den Akteur*innen auf der Spur"
+        height="1000"
+        width="100%"
+        src="map_embd.svg">
+         </iframe>
+        -->
+    <div class="svg-container">
+     <svg id="alles" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 947.3 708.7" style="enable-background:new 0 0 947.3 708.7;" xml:space="preserve">
+        <defs> <!--box fillings-->
+              
+            <pattern id="zueblin-overlay" x=0 y=0 width=1 height=1>
+                <image width="66.5" height="45.4" xlink:href="resources/zueblin.jpg" />
+            </pattern>
+            <pattern id="tagsbasketball-overlay" x=0 y=0 width=1 height=1>
+                <image width="65.8" height="47.8" xlink:href="resources/tagsbasketball.jpg" />
+            </pattern>
+            <pattern id="durchgang-overlay" x=0 y=0 width=1 height=1>
+                <image width="65.7" height="48" xlink:href="resources/durchgang.jpg" />
+            </pattern> 
+            <pattern id="korb-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.3" height="65.7" xlink:href="resources/korb.jpg" />
+            </pattern> 
+            <pattern id="graffiti-overlay" x=0 y=0 width=1 height=1>
+                <image width="67" height="49.8" xlink:href="resources/graffiti.jpg" />
+            </pattern> 
+            <pattern id="glassteine-overlay" x=0 y=0 width=1 height=1>
+                <image width="68" height="48.4" xlink:href="resources/glassteine.jpg" />
+            </pattern> 
+            <pattern id="baustelle-overlay" x=0 y=0 width=1 height=1>
+                <image width="49.8" height="66.8" xlink:href="resources/baustelle.jpg" />
+            </pattern> 
+            <pattern id="haufen-overlay" x=0 y=0 width=1 height=1>
+                <image width="68.3" height="49.3" xlink:href="resources/haufen.jpg" />
+            </pattern> 
+            <pattern id="bauzaunwasser-overlay" x=0 y=0 width=1 height=1>
+                <image width="67.7" height="49" xlink:href="resources/bauzaunwasser.jpg" />
+            </pattern> 
+            <pattern id="wand-overlay" x=0 y=0 width=1 height=1>
+                <image width="67.9" height="54.8" xlink:href="resources/wand.jpg" />
+            </pattern>
+            <pattern id="leiter-overlay" x=0 y=0 width=1 height=1>
+                <image width="48.8" height="68.1" xlink:href="resources/leiter.jpg" />
+            </pattern>
+            <pattern id="lampen-overlay" x=0 y=0 width=1 height=1>
+                <image width="49.1" height="66.4" xlink:href="resources/lampen.jpg" />
+            </pattern>
+            <pattern id="steine-overlay" x=0 y=0 width=1 height=1>
+                <image width="66.9" height="47.5" xlink:href="resources/steine.jpg" />
+            </pattern>
+            <pattern id="staender-overlay" x=0 y=0 width=1 height=1>
+                <image width="65.6" height="46.9" xlink:href="resources/staender.jpg" />
+            </pattern>
+            <pattern id="holz-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.6" height="67.3" xlink:href="resources/holz.jpg" />
+            </pattern>
+            <pattern id="betretenbaustelle-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.3" height="66.4" xlink:href="resources/betretenbaustelle.jpg" />
+            </pattern>
+            <pattern id="bauschild-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.3" height="65.1" xlink:href="resources/bauschild.jpg" />
+            </pattern>
+            <pattern id="zauntor-overlay" x=0 y=0 width=1 height=1>
+                <image width="48" height="65.3" xlink:href="resources/zauntor.jpg" />
+            </pattern>
+            <pattern id="betretenhof-overlay" x=0 y=0 width=1 height=1>
+                <image width="67.1" height="46.9" xlink:href="resources/betretenhof.jpg" />
+            </pattern>
+            <pattern id="klo-overlay" x=0 y=0 width=1 height=1>
+                <image width="49.3" height="65.6" xlink:href="resources/klo.jpg" />
+            </pattern>
+            <pattern id="markierung-overlay" x=0 y=0 width=1 height=1>
+                <image width="50.3" height="67" xlink:href="resources/markierung.jpg" />
+            </pattern>
+            <pattern id="zaunhalle-overlay" x=0 y=0 width=1 height=1>
+                <image width="48.6" height="65.7" xlink:href="resources/zaunhalle.jpg" />
+            </pattern>
+            <pattern id="zaunmitte-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.7" height="66.3" xlink:href="resources/zaunmitte.jpg" />
+            </pattern>
+            <pattern id="treppe-overlay" x=0 y=0 width=1 height=1>
+                <image width="48" height="66" xlink:href="resources/treppe.jpg" />
+            </pattern>
+            <pattern id="strom-overlay" x=0 y=0 width=1 height=1>
+                <image width="49.5" height="63.4" xlink:href="resources/strom.jpg" />
+            </pattern>
+            <pattern id="ponton-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.1" height="66" xlink:href="resources/ponton.jpg" />
+            </pattern>
+            <pattern id="leitervorne-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.1" height="64" xlink:href="resources/leitervorne.jpg" />
+            </pattern>
+            <pattern id="waerter-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.8" height="63.8" xlink:href="resources/waerter.jpg" />
+            </pattern>
+            <pattern id="fernwaerme-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.6" height="64.3" xlink:href="resources/fernwaerme.jpg" />
+            </pattern>
+            <pattern id="waerter-overlay" x=0 y=0 width=1 height=1>
+                <image width="47.6" height="64.3" xlink:href="resources/waerter.jpg" />
+            </pattern>
+            <pattern id="hallotor-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.9" height="64.8" xlink:href="resources/hallotor.jpg" />
+            </pattern>
+            <pattern id="zueblin-overlay" x=0 y=0 width=1 height=1>
+                <image width="66.5" height="45.4" xlink:href="resources/zueblin.jpg" />
+            </pattern>
+            <pattern id="bank-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.3" height="64.5" xlink:href="resources/bank.jpg" />
+            </pattern>
+            <pattern id="hallo-overlay" x=0 y=0 width=1 height=1>
+                <image width="65.4" height="45.1" xlink:href="resources/hallo.jpg" />
+            </pattern>
+            <pattern id="hausmeister-overlay" x=0 y=0 width=1 height=1>
+                <image width="65.4" height="46.3" xlink:href="resources/hausmeister.jpg" />
+            </pattern>
+            <pattern id="pontontor-overlay" x=0 y=0 width=1 height=1>
+                <image width="46.8" height="63.8" xlink:href="resources/pontontor.jpg" />
+            </pattern>
+        </defs>
+        <g id="matrix-group" transform="matrix(1 0 0 1 0 0)">
+        <g id="background">
+            <image width="4000" height="3000" xlink:href="resources/DSCN02831.JPG"  transform="matrix(0.24 0 0 0.24 -5.9983 -5.3386)">
+            </image>
+        </g>
+        <g id="plan">
+            <path class="st0" d="M636,558.1l10.6-394.6l0.1-2.5l-41.4-0.6l0,0l-2.1,0L365.8,72l-1.7,4.7l224.2,83.4l-40.4-0.6l-5,305l55.6,2.7
+                l6.8-302l36.4,0.6L631,558.1l-25.8-0.1l-153,2.5l-89.6,0.6l-50.4-1.2l-1.1-19.6h0l-1.9-40.3l30.5-92.3l56.8,3.6l-2.6-258h-60.2
+                l1.7,251.3l-30.5,92.4l-88.3-1.9l-4.2,47.1l93.8,0.6l0.9,16.9l-100.1-2.4l-0.1,5l155.7,3.8l89.7-0.6l153-2.5l162.5,0.6l0-5
+                L636,558.1z M547.8,459.8l0.8-48.2l46-0.5l-1.1,50.9L547.8,459.8z M594.7,406.1l-46,0.5l4-242l47.4,0.7L594.7,406.1z M340.3,402.8
+                L339.5,287l50.6,0.8l1.2,118.2L340.3,402.8z M388.8,158.4l1.2,124.4l-50.6-0.8l-0.9-123.6H388.8z M221.1,500.3l83.2,1.8l1.7,35.8
+                l-88.1-0.6L221.1,500.3z"/>
+            <path class="st0" d="M511.8,471.2l-1,12.1l-35.9-2v40.3l67.8,2.1l3.3-47.4L511.8,471.2z M538,518.6l-58.2-1.8v-30.2l35.5,2l1-11.7
+                l24.3,3.7L538,518.6z"/>
+        </g>
+        <g id="licht">
+            <rect id="schalter" x="758.8" y="422.6" class="st0" width="17.5" height="18.6"/>
+        </g>
+        <g id="topf-gruppe" >
+            <path id="topf-poly" class="st0" d="M197.3,680.6l-3.8-5.1l-3.1-29.3l-2-6.1l-2-3.8v-4.1l-0.3-7.8c0,0,0.7-3.4,7.2-7.5
+			c6.5-4.1,23.9-6.8,27-6.8c3.1,0,20.8,1.4,24.9,2.7c4.1,1.4,9.2,3.8,9.2,3.8l4.1-2.7l2.4,2.4l-2.7,3.4l1.4,3.4l-1,3.8l-2.4,2.7
+			l-4.1,44.7c0,0-3.4,6.5-9.2,8.5c-5.8,2-8.9,2.4-8.9,2.4l1,17.1l-0.7,4.1l3.4,0.7l-21.8,18.8c0,0,5.5-0.3,7.2,0.3
+			c1.7,0.7,4.4,5.5,2.4,6.1c-2,0.7-7.5,2.7-11.6,2c-4.1-0.7-8.9-0.3-8.9-0.3l-4.1,1.7l-4.4-0.3c0,0-5.1,2-6.8,1l-0.3-2.7l-17.1-6.1
+			l-2,9.6l-47.4-2.4l0.3-3.8l-2.7-0.3l5.1-7.8l-4.4-2.4l13.3-8.5l6.5-14.3l9.9,2.7l8.2-9.2l19.5,7.2l17.1-2.7l27.6,7.2l-1.7-16.4
+			c0,0-10.9,0.7-17.4-2.4C197.3,680.6,197.3,680.6,197.3,680.6z"/>
+               
+                
+        </g>
+        <g id="legende">
+            <rect id="spur" x="70.1" y="148.4" class="st0" width="51.7" height="68.3"/>
+            <rect id="civil" x="94.2" y="255.4" class="st0" width="46.6" height="15.2"/>
+            <rect id="public" x="95.5" y="271.2" class="st0" width="46.6" height="15.2"/>
+            <rect id="private" x="95.5" y="289.7" class="st0" width="46.6" height="15.2"/>
+            <rect id="verbindung" x="76.8" y="334.3" class="st0" width="48.2" height="12.3"/>
+            <rect id="gelande" x="72.9" y="374.4" class="st0" width="55" height="12"/>
+            <rect id="akteur" x="74.8" y="414.2" class="st0" width="52.4" height="13.6"/>
+            <rect id="stories" x="76.1" y="455.1" class="st0" width="51.8" height="12.5"/>
+        </g>
+        <g id="spuren">
+            <rect id="tagsbasketball" x="246.4" y="336.6" class="st0" width="65.8" height="47.8"/>
+            <rect id="durchgang" x="331.5" y="290.9" class="st0 hoverpic" width="65.7" height="48"/>
+            <rect id="korb" x="309.2" y="329.4" class="st0" width="46.3" height="65.7"/>
+            <rect id="graffiti" x="277.1" y="257.4" class="st0" width="67" height="49.8"/>
+            <rect id="glassteine" x="268.5" y="187" class="st0" width="68" height="48.4"/>
+            <rect id="baustelle" x="340.1" y="46.6" class="st0" width="49.8" height="66.8"/>
+            <rect id="haufen" x="371.4" y="146.9" class="st0" width="68.3" height="49.3"/>
+            <rect id="bauzaunwasser" x="455.8" y="170" class="st0" width="67.7" height="49"/>
+            <rect id="wand" x="536.5" y="159.5" class="st0" width="67.9" height="54.8"/>
+            <rect id="leiter" x="601" y="172" class="st0" width="48.8" height="68.1"/>
+            <rect id="lampen" x="322.9" y="153.2" class="st0" width="49.1" height="66.4"/>
+            <rect id="steine" x="380.7" y="198.9" class="st0" width="66.9" height="47.5"/>
+            <rect id="staender" x="303.3" y="224.2" class="st0" width="65.6" height="46.9"/>
+            <rect id="holz" x="371.9" y="233.7" class="st0" width="46.6" height="67.3"/>
+            <rect id="betretenbaustelle" x="279.1" y="399.3" class="st0" width="47.3" height="66.4"/>
+            <rect id="bauschild" x="325.3" y="446.5" class="st0" width="47.3" height="65.1"/>
+            <rect id="zauntor" x="393.7" y="356.9" class="st0" width="48" height="65.3"/>
+            <rect id="betretenhof" x="437.9" y="379.5" class="st0" width="67.1" height="46.9"/>
+            <rect id="klo" x="486.8" y="302.3" class="st0" width="49.3" height="65.6"/>
+            <rect id="markierung" x="510.5" y="225.8" class="st0" width="50.3" height="67"/>
+            <rect id="zaunhalle" x="543" y="277.9" class="st0" width="48.6" height="65.7"/>
+            <rect id="zaunmitte" x="496.5" y="371" class="st0" width="47.7" height="66.3"/>
+            <rect id="treppe" x="553.8" y="346.9" class="st0" width="48" height="66"/>
+            <rect id="strom" x="590.4" y="309.6" class="st0" width="49.5" height="63.4"/>
+            <rect id="ponton" x="637.5" y="258.2" class="st0" width="46.1" height="66"/>
+            <rect id="leitervorne" x="578.3" y="444.6" transform="matrix(0.9994 3.377166e-02 -3.377166e-02 0.9994 16.4391 -20.0517)" class="st0" width="47.1" height="64"/>
+            <rect id="pontontor" x="514.6" y="438.6" transform="matrix(0.998 6.340727e-02 -6.340727e-02 0.998 30.9171 -33.1657)" class="st0" width="46.8" height="63.8"/>
+            <rect id="fernwaerme" x="592.2" y="506.5" transform="matrix(0.9988 4.906665e-02 -4.906665e-02 0.9988 27.1793 -29.526)" class="st0" width="45.6" height="64.6"/>
+            <rect id="waerter" x="310.1" y="518.6" class="st0" width="47.6" height="64.3"/>
+            <rect id="hallotor" x="415.6" y="492" transform="matrix(0.9992 4.046864e-02 -4.046864e-02 0.9992 21.5808 -17.3369)" class="st0" width="46.9" height="64.8"/>
+            <rect id="zueblin" x="366.6" y="556.4" transform="matrix(0.9995 3.170871e-02 -3.170871e-02 0.9995 18.5619 -12.3884)" class="st0" width="66.5" height="45.4"/>
+            <rect id="bank" x="454.1" y="528" transform="matrix(0.9996 2.895437e-02 -2.895437e-02 0.9996 16.4217 -13.5822)" class="st0" width="46.3" height="64.5"/>
+            <rect id="hallo" x="474.6" y="502.3" class="st0" width="65.4" height="45.1"/>
+            <rect id="hausmeister" x="482.6" y="597" class="st0" width="65.4" height="46.3"/>
+        </g>
+        <g id="verbindungen">
+	
+            <rect id="V" x="366.1" y="510.3" transform="matrix(0.9853 -0.1711 0.1711 0.9853 -88.8584 71.0897)" class="st0" width="4" height="81.8"/>
+        
+            <rect id="U" x="253.4" y="455.9" transform="matrix(4.394489e-03 -1 1 4.394489e-03 -142.2787 772.9487)" class="st0" width="127.3" height="4"/>
+        
+            <rect id="T" x="334.6" y="424.1" transform="matrix(0.7455 -0.6665 0.6665 0.7455 -205.2471 335.4296)" class="st0" width="4" height="24.8"/>
+            
+            <rect id="S" x="499.4" y="396.2" class="st0" width="10.9" height="4"/>
+        
+            <rect id="R" x="439.7" y="388.7" transform="matrix(0.1961 -0.9806 0.9806 0.1961 -32.5392 750.957)" class="st0" width="4" height="13.2"/>
+        
+            <rect id="Q" x="374.8" y="327.1" transform="matrix(0.3443 -0.9389 0.9389 0.3443 -83.2616 584.5568)" class="st0" width="4" height="49.6"/>
+        
+            <rect id="P" x="354.8" y="422.5" transform="matrix(0.4047 -0.9144 0.9144 0.4047 -161.1114 601.4394)" class="st0" width="53.2" height="4"/>
+        
+            <rect id="O" x="436" y="390.7" transform="matrix(0.9186 -0.3952 0.3952 0.9186 -164.6062 214.3826)" class="st0" width="4" height="232.1"/>
+        
+            <rect id="N" x="437.2" y="385" transform="matrix(0.781 -0.6245 0.6245 0.781 -188.9576 374.2886)" class="st0" width="4" height="143.1"/>
+        
+            <rect id="M" x="475.3" y="478.4" transform="matrix(0.3749 -0.9271 0.9271 0.3749 -131.8905 765.1809)" class="st0" width="52.4" height="4"/>
+        
+            <rect id="L" x="505.2" y="547.9" transform="matrix(0.9729 -0.2312 0.2312 0.9729 -119.1458 132.8284)" class="st0" width="4" height="53.7"/>
+        
+            <rect id="K" x="488" y="538.1" transform="matrix(0.3808 -0.9247 0.9247 0.3808 -156.8933 845.9586)" class="st0" width="130.3" height="4"/>
+            
+            <polygon id="J" class="st0" points="535.2,521.4 531.9,519.1 562.9,475.2 619.7,369.3 623.2,371.2 566.3,477.3 	"/>
+        
+            <rect id="I" x="572.3" y="384.3" transform="matrix(0.3305 -0.9438 0.9438 0.3305 62.552 860.7337)" class="st0" width="131.5" height="4"/>
+        
+            <rect id="H" x="620.4" y="304.8" transform="matrix(0.5353 -0.8446 0.8446 0.5353 34.5544 676.4142)" class="st0" width="23.3" height="4"/>
+        
+            <rect id="G" x="417.8" y="143.6" transform="matrix(0.1966 -0.9805 0.9805 0.1966 97.1826 608.2751)" class="st0" width="4" height="202.5"/>
+        
+            <rect id="F" x="496.7" y="264.8" transform="matrix(0.3777 -0.9259 0.9259 0.3777 97.8268 679.1924)" class="st0" width="115" height="4"/>
+        
+            <rect id="E" x="574.2" y="213.5" transform="matrix(1 -8.121263e-03 8.121263e-03 1 -1.9736 4.6876)" class="st0" width="4" height="63.6"/>
+        
+            <rect id="D" x="521.5" y="142.4" transform="matrix(6.351409e-03 -1 1 6.351409e-03 296.2445 745.9144)" class="st0" width="4" height="162.9"/>
+        
+            <rect id="C" x="518.3" y="204.6" class="st0" width="17" height="4"/>
+        
+            <rect id="B" x="487.1" y="87.9" transform="matrix(8.893301e-02 -0.996 0.996 8.893301e-02 285.6664 633.3917)" class="st0" width="4" height="145.4"/>
+        
+            <polygon id="A" class="st0" points="681.9,254 677.9,253.8 682.5,163.7 574.8,123.9 385.1,72.7 386.2,68.9 576,120.1 576.1,120.1 
+            686.6,161 	"/>
+        </g>
+    </g>
+        </svg>
+    </div>
+
+    <div> <!-- images and text-->
+    <div class="textpic" id="bank-div"><img src="resources/bank.jpg" id="bank-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="bauschild-div"><img src="resources/bauschild.jpg" id="bauschild-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="baustelle-div"><img src="resources/baustelle.jpg" id="baustelle-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="bauzaunwasser-div"><img src="resources/a-bauzaunwasser.png" id="bauzaunwasser-bild" > <p class="longtext"> Der Bezirk Mitte besteht aus 19 Stadtteilenund hat acht Parks.</p><br> <p class="quelle"> Bildquelle: Wikimedia Commons </p></div>
+    <div class="textpic" id="betretenbaustelle-div"><img src="resources/betretenbaustelle.jpg" id="betretenbaustelle-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="betretenhof-div"><img src="resources/a-betretenhof.jpg" id="betretenhof-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="durchgang-div"><img src="resources/durchgang.jpg" id="durchgang-bild" > <p> </p></div>
+    <div class="textpic" id="fernwaerme-div"><img src="resources/a-fernwaerme.jpg" id="fernwaerme-bild" > <p> Fernwärme von Vattenfall zu Stärkefabrik Ingredion </p> <br> <p class="quelle"> Bildquelle: Flickr, txmx 2 </p></div>
+    <div class="textpic" id="glassteine-div"><img src="resources/a-glassteine.jpg" id="glassteine-bild" > <p class="longtext"> "Mit einem Wärmedurchgangs- koeffizienten von bis zu U = 3,5 W/(m²K) ist die wärmedämmende Wirkung herkömmlicher Glassteine so gering, dass sie den heutigen bauphysikalischen Anforderungen in der Verwendung als Außenwand nicht genügen." - Baunetz Wissen </p><p class="quelle"> Bildquelle: Solaris </p></div>
+    <div class="textpic" id="graffiti-div"><img src="resources/a-graffiti.jpg" id="graffiti-bild" > <p></p><p class="quelle"> Bildquelle: Zollo </p></div>
+    <div class="textpic" id="hallo-div"><img src="resources/a-hallo.jpg" id="hallo-bild" > <p class="longtext"> PARKS wird aus der Nachbarschaft heraus entwickelt. Ansässige Initiativen, Vereine, Betriebe und weitere Nachbarinnen und Nachbarn aus den Stadtteilen erarbeiten gemeinsam Gestaltungsideen und setzen diese im Laufe 2019 zusammen um.</p><p class="quelle"> Bildquelle: Zollo </p></div>
+    <div class="textpic" id="hallotor-div"><img src="resources/hallotor.jpg" id="hallotor-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="haufen-div"><img src="resources/haufen.jpg" id="haufen-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="holz-div"><img src="resources/holz.jpg" id="holz-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="klo-div"><img src="resources/klo.jpg" id="klo-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="korb-div"><img src="resources/korb.jpg" id="korb-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="lampen-div"><img src="resources/lampen.jpg" id="lampen-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="leiter-div"><img src="resources/leiter.jpg" id="leiter-bild" ><p> Alle Leitern führen zum Ponton! </p></div>
+    <div class="textpic" id="leitervorne-div"><img src="resources/leitervorne.jpg" id="leitervorne-bild" ><p> Alle Leitern führen zum Ponton! </p></div>
+    <div class="textpic" id="markierung-div"><img src="resources/a-markierung.jpg" id="markierung-bild" > <p> Ist das schon vertikales Grün?</p></div>
+    <div class="textpic" id="ponton-div"><img src="resources/ponton.jpg" id="ponton-bild" > <p class="longtext"> black-schwarz = 2 Menschen, die neues aus Containern und anderen Materialien schaffen. Instagram: <a href="https://www.instagram.com/vanessa17.official/" >@vanessa17.official</a></p></div>
+    <div class="textpic" id="pontontor-div"><img src="resources/pontontor.jpg" id="pontontor-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="staender-div"><img src="resources/staender.jpg" id="staender-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="steine-div"><img src="resources/a-steine.gif" id="steine-bild" > <p> Bänke, Beete, aus Graffitisteinen.</p></div>
+    <div class="textpic" id="strom-div"><img src="resources/strom.jpg" id="strom-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="treppe-div"><img src="resources/treppe.jpg" id="treppe-bild" ><p> Alle Leitern führen zum Ponton! </p></div>
+    <div class="textpic" id="waerter-div"><img src="resources/waerter.jpg" id="waerter-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="wand-div"><img src="resources/a-wand.jpg" id="wand-bild" > <p> Die Wand ist gefallen! Bei gutem Wetter kann man schwimmen gehen.</p></div>
+    <div class="textpic" id="zaunhalle-div"><img src="resources/zaunhalle.jpg" id="zaunhalle-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="zaunmitte-div"><img src="resources/zaunmitte.jpg" id="zaunmitte-bild" > <p> tschüss. Ain't no Zaun.</p></div>
+    <div class="textpic" id="zauntor-div"><img src="resources/zauntor.jpg" id="zauntor-bild" > <p> tschüss. Ain't no Zaun.</p></div>
+    <div class="textpic" id="zueblin-div"><img src="resources/zueblin.jpg" id="zueblin-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="tagsbasketball-div"><img src="resources/tagsbasketball.jpg" id="tagsbasketball-bild" > <p> hallo.</p></div>
+    <div class="textpic" id="hausmeister-div"><img src="resources/hausmeister.jpg" id="hausmeister-bild" ><p>  </p></div>
+    <div class="textpic" id="topf-poly-div"><video src="resources/zeitraffer.mp4" id="topf-poly-video" width="720" height="1280" controls  ><p> work in progress </p></div>
+
+
+    </div>
+    <div class="button">
+    <button id="zoomout" onclick="zoom(0.8)" type="button">–</button>
+    <button id="zoomin" onclick="zoom(1.25)" type="button">+</button> 
+    </div>
+
+
+    <script type="text/javascript" src="scripts/dragscroll.js"></script>
+    <script src="scripts/hoverpic.js"></script>
+    <script src="scripts/zoom.js"></script>
+
+   
+
+    </body>
+
+</html>
