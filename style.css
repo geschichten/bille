@@ -17,6 +17,61 @@ body.dragscroll {
     fill-opacity:0;
 }
 
+/* LEGENDE  */
+
+#planen *.showlegende {
+    fill-opacity:1;
+    fill: white;
+}
+
+#verbindungen *.showlegende {
+    fill-opacity: 1;
+    fill: white;
+    filter: blur(1px);
+
+
+}
+
+#spuren *.showlegende {
+    stroke:palevioletred;
+    stroke-width:5px;
+    filter: blur(1px);
+
+}
+
+#civilen *.showlegende {
+    stroke:white;
+    stroke-width:2px;
+
+}
+
+#privaten *.showlegende {
+    stroke:white;
+    stroke-width:2px;
+
+}
+
+#publicen *.showlegende {
+    stroke:white;
+    stroke-width:2px;
+
+}
+
+#akteuren *.showlegende {
+    stroke:white;
+    stroke-width:2px;
+
+}
+
+#geschichten *.showlegende {
+    stroke:white;
+    stroke-width:2px;
+    filter: blur(2px);
+
+}
+
+/* zoom buttons */
+
 button {
     font-size: 2vw;
     color: white;
@@ -36,6 +91,7 @@ button {
 
 }
 
+/* cursors */
 
 g#background {
     cursor: -moz-grab;
@@ -50,6 +106,15 @@ g#background:active {
     cursor:    -moz-grabbing;
     cursor:         grabbing;
 } 
+
+    
+g#verbindungen:hover {
+    cursor: url(resources/ear.png), pointer;
+
+}
+
+
+/* hover styles */
 
 g#spuren rect:hover {
     stroke:palevioletred;
@@ -71,11 +136,6 @@ g#spuren rect:hover {
   }
 }
     
-    
-g#verbindungen:hover {
-    cursor: url(resources/ear.png), pointer;
-
-}
 
 
 
@@ -89,7 +149,6 @@ div.textpic {
     display: none;
 
 }
-
 
 
 img.thumb {

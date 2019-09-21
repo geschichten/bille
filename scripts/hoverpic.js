@@ -32,6 +32,9 @@ if (document.getElementById(hoverpic[i].id + "-bild") !== null) {
        }
     } } }
 
+
+    // remove old div when new one is displayed
+
 let topf = document.getElementById("topf-poly");
 
 if (document.getElementById(topf.id + "-video") !== null) {
@@ -54,3 +57,4 @@ if (document.getElementById(topf.id + "-video") !== null) {
       }
    
    } }
+
