@@ -17,16 +17,21 @@ if (document.getElementById(hoverpic[i].id + "-bild") !== null) {
 
 
    hoverpic[i].onclick = function () {
+
+      if (document.querySelector(".show") !== null) {
+         document.querySelector(".show").classList.remove("show");
+         console.log("mehrere offen");
+
+      }
       
       document.getElementById(this.id + "-div").classList.toggle("show"); 
       let bigdiv = document.getElementById(this.id + "-div");
       let divId = this.id + "-div";
       let background = document.getElementById("background");
-      console.log(divId);
       background.onclick =
+      // hoverpic.onclick =
       bigdiv.onclick = function () {
-         console.log("testtext");
-         console.log(divId);
+         
          document.getElementById(divId).classList.remove("show");
    
        }
@@ -48,6 +53,7 @@ if (document.getElementById(topf.id + "-video") !== null) {
       let divId = this.id + "-div";
       let background = document.getElementById("background");
       console.log(divId);
+      
 
       background.onclick =
       bigdiv.onclick = function () {

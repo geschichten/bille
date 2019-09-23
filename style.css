@@ -19,6 +19,23 @@ body.dragscroll {
 
 /* LEGENDE  */
 
+
+#legende {
+
+    stroke: palevioletred;
+    stroke-width: 0.5px;
+    filter: blur(1px);
+
+}
+
+#legende *:hover {
+
+    stroke: blue;
+    stroke-width: 1px;
+
+}
+
+
 #planen *.showlegende {
     fill-opacity:1;
     fill: white;
@@ -227,3 +244,26 @@ div.textpic p.quelle {
 
 }
 
+/* Lichtschalter*/
+
+#background.lichtaus {
+
+    filter: brightness(0.4) contrast(175%);
+
+
+}
+
+#schalter {
+    stroke: palevioletred;
+    stroke-width: 0.5px;
+    filter: blur(1px);
+
+}
+
+#schalter:hover {
+
+    stroke: blue;
+    stroke-width: 1px;
+    cursor: pointer;
+
+}
