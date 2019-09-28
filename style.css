@@ -8,7 +8,7 @@ body.dragscroll {
 } */
 
  #alles {
-    width: 250%;
+    width: 200%;
     pointer-events: all;
 } 
 
@@ -228,7 +228,7 @@ div.textpic p {
 
 div.textpic p.longtext {
 
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 
 }
 div.textpic p.quelle {
