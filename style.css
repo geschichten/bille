@@ -17,6 +17,65 @@ body.dragscroll {
     fill-opacity:0;
 }
 
+/* COLLAGE */
+
+#background {
+
+    filter: drop-shadow(0 0 1.2rem black);
+
+
+}
+
+#intro-box {
+
+fill: white;
+stroke-width: 0.1vw;
+stroke: black;
+filter: drop-shadow(0 0 0.75rem crimson);
+
+}
+
+#whitepaper-box {
+
+    fill: black;
+    stroke-width: 0.1vw;
+    stroke: white;
+    filter: drop-shadow(0 0 0.75rem blue);
+    
+    }
+
+#zitat {
+    fill: white;
+    text-shadow: 0px 0px 20px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred, 0px 0px 10px palevioletred;
+
+
+}
+
+text.collage {
+    fill: white;
+    text-shadow: 0px 0px 20px blue, 0px 0px 10px blue, 0px 0px 10px blue, 0px 0px 10px blue;
+
+
+}
+
+#whitepaper-text {
+    fill: white;
+
+}
+
+#osm {
+
+    position: relative;
+
+}
+
+#osm-iframe {
+
+    filter: drop-shadow(0 0 0.75rem white);
+
+
+}
+
 /* LEGENDE  */
 
 
@@ -211,9 +270,12 @@ div.show {
     
 }
 
+
+
+
 div.textpic p {
 
-    width: 30%;
+    width: 20%;
     font-size: 2vw;
     color: white;
     font-family: 'Merriweather', serif;
